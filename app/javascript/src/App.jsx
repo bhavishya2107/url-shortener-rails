@@ -1,22 +1,14 @@
 import React from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import NavBar from "components/NavBar";
+import UrlDashboard from "components/Urls";
 
 const App = () => {
   return (
     <Router>
       <NavBar />
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <div>
-              <h1 className="text-2xl text-center">This is App.jsx</h1>
-            </div>
-          )}
-        />
-        <Route exact path="/about" render={() => <div>About</div>} />
+        <Route exact path="/" component={UrlDashboard} />
       </Switch>
     </Router>
   );

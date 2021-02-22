@@ -3,20 +3,15 @@ import NavItem from "./NavItem";
 
 const NavBar = () => {
   return (
-    <nav className="bg-white shadow">
-      <div className="px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
+    <nav className="bg-blue-700 shadow">
+      <div className="md:container px-2 mx-auto max-w-7xl sm:px-4 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex px-2 lg:px-0">
             <div className="hidden lg:flex">
-              <NavItem name="Todos" path="/dashboard" />
-              <NavItem
-                name="Create"
-                iconClass="ri-add-fill"
-                path="/tasks/create"
-              />
+              <NavItem name="Url.ly" path="/"/>
             </div>
           </div>
-          <div className="flex items-center justify-end">
+          {/* <div className="flex items-center justify-end">
             <a
              className="inline-flex items-center px-1 pt-1 text-sm
              font-semibold leading-5 text-bb-gray-600 text-opacity-50
@@ -26,7 +21,7 @@ const NavBar = () => {
             >
               LogOut
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

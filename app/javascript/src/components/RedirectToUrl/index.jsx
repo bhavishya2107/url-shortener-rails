@@ -4,7 +4,6 @@ import urlsApi from "apis/url";
 
 function RedirectToUrl() {
   const { slug } = useParams();
-
   useEffect(() => {
     getOriginalUrl();
   }, []);
@@ -12,7 +11,6 @@ function RedirectToUrl() {
   const getOriginalUrl = async () => {
     try {
       await urlsApi.show(slug);
-      // RedirectToUrl()
     } catch (error) {
       console.log(error);
     }

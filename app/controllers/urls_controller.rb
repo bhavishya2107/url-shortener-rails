@@ -13,8 +13,8 @@ class UrlsController < ApplicationController
     else
       render status: :unprocessable_entity,
       json: { errors: url.errors.full_messages.to_sentence }
+    end
   end
-end
 
   def show
     update_click_count
@@ -33,7 +33,7 @@ end
   private 
 
   def url_params
-    params.require(:url).permit(:original_url, :pinned)
+    params.require(:url).permit(:original_url)
   end
 
   def find_url 

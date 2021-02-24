@@ -9,8 +9,8 @@ const App = () => {
     <Router>
       <NavBar />
       <Switch>
-        <Route exact path="/" component={UrlDashboard} />
-        <Route exact path="/:slug"  component={() => <RedirectToUrl  />}  />
+        <Route exact path="/" component={UrlDashboard}/>
+        <Route exact path="/:slug" component={() => <RedirectToUrl/>}/>
       </Switch>
     </Router>
   );

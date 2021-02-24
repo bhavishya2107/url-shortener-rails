@@ -13,5 +13,6 @@ class Url < ApplicationRecord
 
   def set_defaults
     self.pinned = false if self.new_record?
+    self.clicks = 0 if self.new_record?
   end
 end

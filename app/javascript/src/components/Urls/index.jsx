@@ -64,9 +64,8 @@ function UrlDashboard() {
   };
 
   return (
-    <div>
-      <div className="px-4 py-6 lg:px-8 bg-gray-50 sm:px-6">
-        <div className="border border-gray-300 rounded-md bg-white p-8 rounded-lg shadow-lg">
+      <div className="px-4 py-6 lg:px-8 bg-gray-50 sm:px-6 w-4/6 p-4 my-0 mx-auto">
+        <div className="container border border-gray-300 rounded-md bg-white p-8 shadow-lg ">
           <Input
             label="Enter Url"
             placeholder="Enter url"
@@ -79,7 +78,7 @@ function UrlDashboard() {
             onClick={handleSubmit}
           />
         </div>
-        <section className="my-4 w-4/6 p-4 my-0 mx-auto">
+        <section className="mt-4">
           <div>
             <ul className="border shadow-sm">
               <li className="flex items-center justify-between bg-blue-600 mb-px p-4 text-white text-xl">
@@ -148,7 +147,6 @@ function UrlDashboard() {
           </div>
         </section>
       </div>
-    </div>
   );
 }
 
